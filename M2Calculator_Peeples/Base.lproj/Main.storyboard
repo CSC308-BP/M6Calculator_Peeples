@@ -34,6 +34,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="operatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxJ-mC-1vs"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4U-zF-flT">
                                 <rect key="frame" x="16" y="281" width="361" height="12"/>
@@ -52,11 +55,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
+                                <connections>
+                                    <action selector="resultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ow-jO-EO5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="operand1TextField" destination="0JR-a2-CxP" id="HTK-5d-MOa"/>
+                        <outlet property="operand2TextField" destination="7Nc-pO-0W4" id="eDN-OI-5kR"/>
+                        <outlet property="resultLabel" destination="1pS-BT-Vwe" id="qNl-7Q-23L"/>
+                        <outlet property="selectOperator" destination="rcr-vZ-c1r" id="BaI-mr-qDq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
